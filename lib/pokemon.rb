@@ -29,6 +29,7 @@ class Pokemon
      def self.find(id, db)
         pokemon_inf = db.execute("SELECT * FROM pokemon WHERE id IS ?", id).flatten
         Pokemon.new(id: id, name: pokemon_inf[1], type: pokemon_inf[2], db: db)
+        #making pokemon object with the data from our table.
      end
 
      def self.all

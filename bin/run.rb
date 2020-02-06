@@ -5,4 +5,3 @@ Scraper.new(@db).scrape
 all_pokemon = @db.execute("SELECT * FROM pokemon;")
 
 # test out your code here!
-# sqlite3 db/pokemon.db < db/schema_migration.sql
